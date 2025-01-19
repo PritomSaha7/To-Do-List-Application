@@ -1,0 +1,43 @@
+@model ToDoListApplication.Models.Entities.WorkTable
+
+<style>
+    .design5 {
+        font-size: 180%;
+        font-family: "Bitstream Charter";
+        font-weight: bold;
+    }
+</style>
+
+<p class = "design5" style = "text-align: center"> Edit ToDo List </p>
+
+@if (Model is null)
+{
+    <p> No ToDo List is found </p>
+}
+else
+{
+    <form method="post" class = "design5">
+
+
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Name</label>
+            <input type="text" class="form-control" id="exampleInputPassword1" asp-for="Name" readonly>
+        </div>
+
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Description</label>
+            <input type="text" class="form-control" id="exampleInputPassword1" asp-for="Description">
+        </div>
+
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Status</label>
+            <input type="text" class="form-control" id="exampleInputPassword1" asp-for="Status">
+        </div>
+
+        <div class="mb-3">
+            <button type="submit" class="btn btn-dark btn-lg">Save</button>
+            <button type="submit" class="btn btn-danger ms-3 btn-lg" asp-action="Delete" asp-controller="ToDoListApplication">Delete</button>
+        </div>
+
+    </form>
+}

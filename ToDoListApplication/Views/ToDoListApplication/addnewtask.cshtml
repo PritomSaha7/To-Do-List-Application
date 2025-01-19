@@ -1,0 +1,35 @@
+
+@model ToDoListApplication.Models.AddWorkTableViewModel
+
+<style>
+    .design {
+        font-size: 130%;
+        font-weight: bold;
+        font-family: "Bitstream Charter";
+    }
+</style>
+
+<p style = "text-align: center; font-size: 190%; font-family: 'Bitstream Charter'; font-weight: bold;"> Add New Task </p>
+
+<form method = "post" class="design">
+
+    <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label"> Task Name</label>
+        <input type="text" class="form-control" id="exampleInputPassword1" asp-for="Name">
+    </div>
+
+    <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label"> Task Description</label>
+        <input type="text" class="form-control" id="exampleInputPassword1" asp-for="Description">
+    </div>
+
+    <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label"> Task Status</label>
+        <input type="text" class="form-control" id="exampleInputPassword1" asp-for="Status">
+    </div>
+    
+    <div class="mb-3">
+        <button type="submit" class="btn btn-dark btn-lg"> Save </button>
+    </div>
+
+</form>

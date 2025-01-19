@@ -1,0 +1,31 @@
+@model List<ToDoListApplication.Models.Entities.WorkTable>
+
+<style>
+    .design4 {
+        font-size: 120%;
+        font-family: "Bitstream Charter";
+        font-weight: bold;
+    }
+</style>
+
+<table class="table">
+    <thead class = "design4">
+    <tr>
+        <th scope="col"> Task Name </th>
+        <th scope="col"> Task Description </th>
+        <th scope="col"> Task Status</th>
+    </tr>
+    </thead>
+    <tbody class = "design4">
+    @foreach (var task in Model)
+    {
+        <tr>
+            <td>@task.Name</td>
+            <td>@task.Description</td>
+            <td>@task.Status</td>
+            <td> <a class = "btn btn-dark btn-lg"asp-controller="ToDoListApplication" asp-action="Edit" asp-route-id="@task.Id"> Edit </a></td>
+        </tr>
+    }
+    </tbody>
+    
+</table>
