@@ -21,7 +21,7 @@ else
 
         <div class="mb-3">
             <label for="exampleInputPassword1" class="form-label">Name</label>
-            <input type="text" class="form-control" id="exampleInputPassword1" asp-for="Name" readonly>
+            <input type="text" class="form-control" id="exampleInputPassword1" asp-for="Name">
         </div>
 
         <div class="mb-3">
@@ -36,7 +36,7 @@ else
 
         <div class="mb-3">
             <button type="submit" class="btn btn-dark btn-lg">Save</button>
-            <button type="submit" class="btn btn-danger ms-3 btn-lg" asp-action="Delete" asp-controller="ToDoListApplication">Delete</button>
+            <button type="submit" class="btn btn-danger ms-3 btn-lg" asp-controller="ToDoListApplication" asp-action="Delete" asp-route-id="@Model.Id">Delete</button>
         </div>
 
     </form>

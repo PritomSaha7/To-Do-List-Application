@@ -2831,11 +2831,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/pritom/RiderProjects/ToDoListApplication/ToDoListApplication/ToDoListApplication.csproj",
+      "projectUniqueName": "/home/pritom/RiderProjects/To-Do-List-Application/ToDoListApplication/ToDoListApplication.csproj",
       "projectName": "ToDoListApplication",
-      "projectPath": "/home/pritom/RiderProjects/ToDoListApplication/ToDoListApplication/ToDoListApplication.csproj",
+      "projectPath": "/home/pritom/RiderProjects/To-Do-List-Application/ToDoListApplication/ToDoListApplication.csproj",
       "packagesPath": "/home/pritom/.nuget/packages/",
-      "outputPath": "/home/pritom/RiderProjects/ToDoListApplication/ToDoListApplication/obj/",
+      "outputPath": "/home/pritom/RiderProjects/To-Do-List-Application/ToDoListApplication/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/pritom/.nuget/NuGet/NuGet.Config"

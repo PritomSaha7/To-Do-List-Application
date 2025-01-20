@@ -74,6 +74,7 @@ public class ToDoListApplicationController : Controller
     public async Task<IActionResult> Delete(WorkTable viewModel)
     {
         var tasks = await dbContext.works.AsNoTracking().FirstOrDefaultAsync(x => x.Id == viewModel.Id);
+        Console.WriteLine(viewModel.Id);
         if (tasks is not null)
         {
             dbContext.works.Remove(tasks);
